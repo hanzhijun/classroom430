@@ -635,102 +635,102 @@ $(document).ready(function () {
 
     /*------------Twitter feed------------------*/
 
-    $('.tweet').twittie({
-        dateFormat: '%b. %d, %Y',
-        template: '<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;{{tweet}} <div class="date">{{date}}</div><br />',
-        count: 2,
-        hideReplies: true,
-        apiPath: 'twitter_api/tweet.php'
-    });
+    // $('.tweet').twittie({
+    //     dateFormat: '%b. %d, %Y',
+    //     template: '<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;{{tweet}} <div class="date">{{date}}</div><br />',
+    //     count: 2,
+    //     hideReplies: true,
+    //     apiPath: 'twitter_api/tweet.php'
+    // });
 
     /*--------------maps--------------------------*/
     if ($.fn.gmap3 !== undefined) {
-        $(".home_map").gmap3({
-            map: {
-                options: {
-                    center: [17.400408, 78.507905],
-                    zoom: 8,
-                    scrollWheel: false
-                }
-            },
-            marker: {
-                values: [{
-                    address: "nallakunta,hyderabad ",
-                    options: {
-                        icon: "images/location-mark.png"
-                    }
-                }]
-            }
-        });
+        // $(".home_map").gmap3({
+        //     map: {
+        //         options: {
+        //             center: [17.400408, 78.507905],
+        //             zoom: 8,
+        //             scrollWheel: false
+        //         }
+        //     },
+        //     marker: {
+        //         values: [{
+        //             address: "nallakunta,hyderabad ",
+        //             options: {
+        //                 icon: "images/location-mark.png"
+        //             }
+        //         }]
+        //     }
+        // });
     }
     if ($.fn.gmap3 !== undefined) {
-        $(".map").gmap3({
-            map: {
-                options: {
-                    center: [17.400408, 78.507905],
-                    zoom: 8,
-                    scrollwheel: false,
-                    styles: [
-                        {
-                            "featureType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": 0
-                                },
-                                {
-                                    "hue": "#6fbd11"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road",
-                            "stylers": [
-                                {
-                                    "saturation": -70
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "transit",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "stylers": [
-                                {
-                                    "visibility": "simplified"
-                                },
-                                {
-                                    "saturation": -60
-                                }
-                            ]
-                        }
-                    ]
-
-
-                }
-            },
-            marker: {
-                values: [{
-                    address: "nallakunta,hyderabad ",
-                    options: {
-                        icon: "images/location-mark.png"
-                    }
-                }]
-            }
-        });
+        // $(".map").gmap3({
+        //     map: {
+        //         options: {
+        //             center: [17.400408, 78.507905],
+        //             zoom: 8,
+        //             scrollwheel: false,
+        //             styles: [
+        //                 {
+        //                     "featureType": "all",
+        //                     "stylers": [
+        //                         {
+        //                             "saturation": 0
+        //                         },
+        //                         {
+        //                             "hue": "#6fbd11"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     "featureType": "road",
+        //                     "stylers": [
+        //                         {
+        //                             "saturation": -70
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     "featureType": "transit",
+        //                     "stylers": [
+        //                         {
+        //                             "visibility": "off"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     "featureType": "poi",
+        //                     "stylers": [
+        //                         {
+        //                             "visibility": "off"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     "featureType": "water",
+        //                     "stylers": [
+        //                         {
+        //                             "visibility": "simplified"
+        //                         },
+        //                         {
+        //                             "saturation": -60
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //
+        //
+        //         }
+        //     },
+        //     marker: {
+        //         values: [{
+        //             address: "nallakunta,hyderabad ",
+        //             options: {
+        //                 icon: "images/location-mark.png"
+        //             }
+        //         }]
+        //     }
+        // });
     }
     /*------------case studies hover effect-------------------*/
     $(".case-item").on('mouseenter', function () {
@@ -846,21 +846,21 @@ $(document).ready(function () {
     }
     /*------------------------Dribbble widget----------------------*/
     if ($(".shots")[0]) {
-        $.jribbble.setToken('f688ac519289f19ce5cebc1383c15ad5c02bd58205cd83c86cbb0ce09170c1b4');
-        $.jribbble.shots('debuts', {'per_page': 6, 'timeframe': 'month', 'sort': 'views'}).then(function (res) {
-            var html = [];
-            res.forEach(function (shot) {
-                html.push('<li class="shots--shot">');
-                html.push('<a href="' + shot.html_url + '" target="_blank">');
-                html.push('<img src="' + shot.images.normal + '">');
-                html.push('</a></li>');
-            });
-            $('.shots').html(html.join(''));
-        });
+        // $.jribbble.setToken('f688ac519289f19ce5cebc1383c15ad5c02bd58205cd83c86cbb0ce09170c1b4');
+        // $.jribbble.shots('debuts', {'per_page': 6, 'timeframe': 'month', 'sort': 'views'}).then(function (res) {
+        //     var html = [];
+        //     res.forEach(function (shot) {
+        //         html.push('<li class="shots--shot">');
+        //         html.push('<a href="' + shot.html_url + '" target="_blank">');
+        //         html.push('<img src="' + shot.images.normal + '">');
+        //         html.push('</a></li>');
+        //     });
+        //     $('.shots').html(html.join(''));
+        // });
     }
     /*-------------plyr----------------------*/
     if ($('.video')[0]) {
-        plyr.setup();
+        // plyr.setup();
     }
     /*-------------Count Up-------------*/
     if (typeof CountUp === "function") {
@@ -874,24 +874,24 @@ $(document).ready(function () {
         };
         /*-------------Index---------------*/
         if ($("#Overseas")[0]) {
-            var demo4 = new CountUp("Success", 0, 97, 0, 7, options);
-            var demo3 = new CountUp("Client", 0, 1400, 0, 7, options);
-            var demo2 = new CountUp("Investors", 0, 1600, 0, 7, options);
-            var demo1 = new CountUp("Overseas", 0, 56, 0, 7, options);
-            $(window).on('scroll', function () {
-                var winTop = $(window).scrollTop();
-                var winHeight = $(window).height();
-
-                var animation1 = $('#Overseas').offset().top;
-                if (winTop >= (animation1 - winHeight)) {
-                    demo4.start();
-                    demo3.start();
-                    demo2.start();
-                    demo1.start();
-
-
-                }
-            });
+            // var demo4 = new CountUp("Success", 0, 97, 0, 7, options);
+            // var demo3 = new CountUp("Client", 0, 1400, 0, 7, options);
+            // var demo2 = new CountUp("Investors", 0, 1600, 0, 7, options);
+            // var demo1 = new CountUp("Overseas", 0, 56, 0, 7, options);
+            // $(window).on('scroll', function () {
+            //     var winTop = $(window).scrollTop();
+            //     var winHeight = $(window).height();
+            //
+            //     var animation1 = $('#Overseas').offset().top;
+            //     if (winTop >= (animation1 - winHeight)) {
+            //         demo4.start();
+            //         demo3.start();
+            //         demo2.start();
+            //         demo1.start();
+            //
+            //
+            //     }
+            // });
         }
         /*------------Carousel Time interval-------------*/
         $('#services_carousel').carousel({
